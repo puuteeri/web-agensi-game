@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Studio Game ABC</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #eaf4ff;
+        }
+
+        h1 {
+            color: #1976d2;
+        }
+
+        .game-card {
+            background: white;
+            padding: 20px;
+            margin: 12px auto;
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid #90caf9;
+        }
+
+        .game-card h3 {
+            color: #1565c0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🎮 Selamat Datang di Studio Kami</h1>
+
+    <div id="daftar-game"></div>
+
+    <script>
+        let namaGame = ["Lala ABC: Game Edukasi Huruf"];
+
+        for (let i = 0; i < namaGame.length; i++) {
+            document.getElementById("daftar-game").innerHTML +=
+            "<div class='game-card'><h3>🔤 " + namaGame[i] + "</h3></div>";
+        }
+    </script>
+</body>
+</html>
+
